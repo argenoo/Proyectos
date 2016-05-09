@@ -5,6 +5,53 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES"
+            hideIssues = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F42624341CDF0CAA00F8E654"
+               BuildableName = "PedirPizzaAppleWatch WatchKit App.app"
+               BlueprintName = "PedirPizzaAppleWatch WatchKit App"
+               ReferencedContainer = "container:PedirPizzaAppleWatch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES"
+            hideIssues = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F42624221CDF0CAA00F8E654"
+               BuildableName = "PedirPizzaAppleWatch.app"
+               BlueprintName = "PedirPizzaAppleWatch"
+               ReferencedContainer = "container:PedirPizzaAppleWatch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES"
+            hideIssues = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F42624431CDF0CAA00F8E654"
+               BuildableName = "PedirPizzaAppleWatch WatchKit Extension.appex"
+               BlueprintName = "PedirPizzaAppleWatch WatchKit Extension"
+               ReferencedContainer = "container:PedirPizzaAppleWatch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -13,6 +60,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F42624341CDF0CAA00F8E654"
+            BuildableName = "PedirPizzaAppleWatch WatchKit App.app"
+            BlueprintName = "PedirPizzaAppleWatch WatchKit App"
+            ReferencedContainer = "container:PedirPizzaAppleWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +82,27 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/PedirPizzaAppleWatch WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F42624341CDF0CAA00F8E654"
+            BuildableName = "PedirPizzaAppleWatch WatchKit App.app"
+            BlueprintName = "PedirPizzaAppleWatch WatchKit App"
+            ReferencedContainer = "container:PedirPizzaAppleWatch.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F42624341CDF0CAA00F8E654"
+            BuildableName = "PedirPizzaAppleWatch WatchKit App.app"
+            BlueprintName = "PedirPizzaAppleWatch WatchKit App"
+            ReferencedContainer = "container:PedirPizzaAppleWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +112,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/PedirPizzaAppleWatch WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F42624341CDF0CAA00F8E654"
+            BuildableName = "PedirPizzaAppleWatch WatchKit App.app"
+            BlueprintName = "PedirPizzaAppleWatch WatchKit App"
+            ReferencedContainer = "container:PedirPizzaAppleWatch.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F42624341CDF0CAA00F8E654"
+            BuildableName = "PedirPizzaAppleWatch WatchKit App.app"
+            BlueprintName = "PedirPizzaAppleWatch WatchKit App"
+            ReferencedContainer = "container:PedirPizzaAppleWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

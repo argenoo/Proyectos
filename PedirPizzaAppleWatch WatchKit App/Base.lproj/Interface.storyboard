@@ -1,15 +1,362 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10112" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PedirPizzaAppleWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <separator alignment="left" id="bUv-11-D7B"/>
+                        <separator alignment="left" id="y7n-vj-e6S"/>
+                        <label width="1" alignment="center" text="ORDENA TU PIZZA EN 4 PASOS" textAlignment="center" numberOfLines="2" id="SAF-gn-qb1"/>
+                        <separator alignment="left" id="fGG-yL-8rc"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Comenzar" id="0ED-na-tgg">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="HLO-0q-rwB" kind="push" id="jOv-3M-DKe"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="3ld-qa-86L"/>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-128" y="264"/>
+        </scene>
+        <!--Paso1-->
+        <scene sceneID="8Be-dc-m7s">
+            <objects>
+                <controller id="HLO-0q-rwB" customClass="Paso1" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="1" textAlignment="center" id="JoI-wu-g2f">
+                            <color key="textColor" red="1" green="0.54000288249999995" blue="0.059345364570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="1" alignment="center" text="Selecciona el tamaño de la pizza:" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="3" id="AHJ-o4-RPr"/>
+                        <separator alignment="left" id="u6a-Qx-tWN"/>
+                        <button width="1" alignment="left" title="CHICA" id="2Uj-AO-xNC">
+                            <connections>
+                                <action selector="botonChica" destination="HLO-0q-rwB" id="KzW-Hj-tBg"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="MEDIANA" id="8sD-Tk-0Pz">
+                            <connections>
+                                <action selector="botonMediana" destination="HLO-0q-rwB" id="aAX-9t-F5X"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="GRANDE" id="mJY-OT-5SF">
+                            <connections>
+                                <action selector="botonGrande" destination="HLO-0q-rwB" id="0sV-Hl-1T2"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="XE7-of-Wxc"/>
+                        <label alignment="center" text="Haz seleccionado" id="Bfe-hy-CpU"/>
+                        <label alignment="left" id="i18-97-uOH"/>
+                        <label alignment="center" text="-" textAlignment="center" id="bDH-bF-wN5">
+                            <color key="textColor" red="1" green="0.54000288249999995" blue="0.059345364570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <separator alignment="left" id="iCV-jF-Vxw"/>
+                        <group width="1" alignment="left" id="a2n-va-jbq">
+                            <items>
+                                <button width="65" alignment="center" title="Borrar" id="WRY-9m-ybk">
+                                    <color key="titleColor" red="1" green="0.54000288249999995" blue="0.059345364570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="botonBorrar" destination="HLO-0q-rwB" id="Qol-0N-FWc"/>
+                                    </connections>
+                                </button>
+                                <button width="65" alignment="center" title="Elegir" id="iUA-s1-Udx">
+                                    <color key="titleColor" red="1" green="0.54000288249999995" blue="0.059345364570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="botonElegir" destination="HLO-0q-rwB" id="D4B-fF-2NI"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label height="38.5" alignment="center" verticalAlignment="center" text="BANDERA" textAlignment="center" numberOfLines="2" id="UxE-cl-o70">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="resultadoTamaño" destination="bDH-bF-wN5" id="9vD-G9-gZ8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="249" y="867.25"/>
+        </scene>
+        <!--IdentificadorValor1-->
+        <scene sceneID="9dp-5j-U0a">
+            <objects>
+                <controller identifier="IdentificadorValor1" id="HtA-2f-bLA" customClass="Paso2" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <label width="7.5" alignment="center" text="2" textAlignment="center" id="27r-wj-UyC">
+                            <color key="textColor" red="0.9483681321144104" green="0.85324317216873169" blue="0.10377328842878342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="1" alignment="center" text="Selecciona la masa de la pizza:" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="3" id="fI3-5r-0u1"/>
+                        <separator alignment="left" id="oqw-HU-Q0i"/>
+                        <button width="1" alignment="left" title="DELGADA" id="W3K-f0-KLd">
+                            <connections>
+                                <action selector="botonDelgada" destination="HtA-2f-bLA" id="nx5-Le-qTc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="CRUJIENTE" id="LgL-nl-7Dc">
+                            <connections>
+                                <action selector="botonCrujiente" destination="HtA-2f-bLA" id="d1U-s7-EFB"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="GRUESA" id="soe-Gr-NPT">
+                            <connections>
+                                <action selector="botonGruesa" destination="HtA-2f-bLA" id="7H9-FS-OHn"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="QCc-1F-5ye"/>
+                        <label alignment="center" text="Haz seleccionado" id="tYS-4l-ux6"/>
+                        <label alignment="center" text="-" textAlignment="center" id="dCn-OV-0aX">
+                            <color key="textColor" red="0.9483681321144104" green="0.85324317216873169" blue="0.10377328842878342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="NEW-Jk-bhM"/>
+                        <group width="1" alignment="left" id="R1x-xv-cBD">
+                            <items>
+                                <button width="65" alignment="center" title="Borrar" id="pxl-4J-QMc">
+                                    <color key="titleColor" red="0.9483681321144104" green="0.85324317216873169" blue="0.10377328842878342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="botonBorrar" destination="HtA-2f-bLA" id="imz-Gv-JUx"/>
+                                    </connections>
+                                </button>
+                                <button width="65" alignment="center" title="Elegir" id="GLN-uY-rVx">
+                                    <color key="titleColor" red="0.9483681321144104" green="0.85324317216873169" blue="0.10377328842878342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="botonElegir" destination="HtA-2f-bLA" id="WMd-go-fUH"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label height="38.5" alignment="center" verticalAlignment="center" text="BANDERA" textAlignment="center" numberOfLines="2" id="HR1-Cs-OhC">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="bandera2" destination="HR1-Cs-OhC" id="XbG-n2-Vei"/>
+                        <outlet property="resultadoMasa" destination="dCn-OV-0aX" id="0qA-sj-8sI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="249" y="1333"/>
+        </scene>
+        <!--IdentificadorValor2-->
+        <scene sceneID="CCg-vY-vJI">
+            <objects>
+                <controller identifier="IdentificadorValor2" id="bef-Xy-8jD" customClass="Paso3" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="3" textAlignment="center" id="mge-3H-fDc">
+                            <color key="textColor" red="0.8844335675239563" green="0.055905483663082123" blue="0.28123801946640015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="1" alignment="center" text="Selecciona el tipo de queso de la pizza:" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="3" id="Ad0-8D-n6R"/>
+                        <separator alignment="left" id="bXt-ni-XsF"/>
+                        <button width="1" alignment="left" title="MOZAZARELA" id="PWQ-LD-DJM">
+                            <connections>
+                                <action selector="botonMozzarela" destination="bef-Xy-8jD" id="Mda-tW-rQq"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="PARMESANO" id="8A1-ny-LN7">
+                            <connections>
+                                <action selector="botonParmesano" destination="bef-Xy-8jD" id="MdW-A2-ZUR"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="CHEDDAR" id="nfn-rA-szB">
+                            <connections>
+                                <action selector="botonCheddar" destination="bef-Xy-8jD" id="YfX-Wr-qYu"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="SIN QUESO" id="jVx-xB-UDy">
+                            <connections>
+                                <action selector="botonSinQueso" destination="bef-Xy-8jD" id="N7O-A4-4d6"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="vRD-S2-55l"/>
+                        <label alignment="center" text="Haz seleccionado" textAlignment="center" id="3gD-PO-N1N"/>
+                        <label alignment="center" text="-" textAlignment="center" id="Le4-0F-T7i">
+                            <color key="textColor" red="0.8844335675239563" green="0.055905483663082123" blue="0.28123801946640015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="dqi-OR-QRS"/>
+                        <group width="1" alignment="left" id="4DU-HU-BBN">
+                            <items>
+                                <button width="65" alignment="center" title="Borrar" id="reY-U0-HHn">
+                                    <color key="titleColor" red="0.8844335675239563" green="0.055905483663082123" blue="0.28123801946640015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="botonBorrar" destination="bef-Xy-8jD" id="YVD-jE-qQ3"/>
+                                    </connections>
+                                </button>
+                                <button width="82" alignment="center" title="Elegir" id="J2C-St-9Ih">
+                                    <color key="titleColor" red="0.8844335675239563" green="0.055905483663082123" blue="0.28123801946640015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="botonElegir" destination="bef-Xy-8jD" id="Xri-lO-O0g"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label height="38.5" alignment="center" verticalAlignment="center" text="BANDERA" textAlignment="center" numberOfLines="3" id="kWG-Lj-UQ2">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="bandera3" destination="kWG-Lj-UQ2" id="ngi-gt-5Z7"/>
+                        <outlet property="resultadoQueso" destination="Le4-0F-T7i" id="Lf1-cW-M9W"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="249" y="1835.75"/>
+        </scene>
+        <!--IdentificadorValor3-->
+        <scene sceneID="sYl-26-TIG">
+            <objects>
+                <controller identifier="IdentificadorValor3" id="YFX-Wh-o65" customClass="Paso4" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="4" textAlignment="center" id="P5Z-2o-Mad">
+                            <color key="textColor" red="0.14014863967895508" green="0.85493707656860352" blue="0.93597513437271118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="1" alignment="center" text="Selecciona de 1 a 5 Ingredientes:" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="3" id="HyG-cw-omA"/>
+                        <separator alignment="left" id="nYE-VT-6R9"/>
+                        <switch width="1" alignment="left" title="Jamón" id="2Qr-hN-cda">
+                            <connections>
+                                <action selector="InterruptorJamon:" destination="YFX-Wh-o65" id="CCM-Wr-OEx"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pepperoni" id="gDY-Hv-p45">
+                            <connections>
+                                <action selector="InterruptorPepperoni:" destination="YFX-Wh-o65" id="qTN-YB-PFY"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pavo" id="rgs-SM-ax5">
+                            <connections>
+                                <action selector="InterruptorPavo:" destination="YFX-Wh-o65" id="LKN-22-pfi"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Salchicha" id="TeV-eI-KlD">
+                            <connections>
+                                <action selector="InterruptorSalchicha:" destination="YFX-Wh-o65" id="uKL-Fl-jdl"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Aceituna" id="U1u-jU-fUY">
+                            <connections>
+                                <action selector="InterruptorAceituna:" destination="YFX-Wh-o65" id="aAu-pB-Tcl"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Cebolla" id="4Ej-5m-UEN">
+                            <connections>
+                                <action selector="InterruptorCebolla:" destination="YFX-Wh-o65" id="6IU-g0-MWt"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pimieno" id="lml-i5-zj1">
+                            <connections>
+                                <action selector="InterruptorPimiento:" destination="YFX-Wh-o65" id="zNv-AO-Brb"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Piña" id="iZy-Se-5m0">
+                            <connections>
+                                <action selector="InterruptorPiña:" destination="YFX-Wh-o65" id="6X2-H0-0L2"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Anchoa" id="VdU-zZ-o5n">
+                            <connections>
+                                <action selector="InterruptorAnchoa:" destination="YFX-Wh-o65" id="aIY-FX-UaB"/>
+                            </connections>
+                        </switch>
+                        <separator alignment="left" id="DLa-1f-Vro"/>
+                        <label alignment="center" text="Haz seleccionado" id="h1i-GP-aJJ"/>
+                        <label alignment="center" text="-" textAlignment="center" numberOfLines="5" id="iCd-nq-3G7">
+                            <color key="textColor" red="0.14014863967895508" green="0.85493707656860352" blue="0.93597513437271118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="p8q-7I-dKa"/>
+                        <group width="1" alignment="left" id="oNw-wJ-Wpa">
+                            <items>
+                                <button width="65" alignment="center" title="Borrar" id="hfD-99-eXD">
+                                    <color key="titleColor" red="0.14014863967895508" green="0.85493707656860352" blue="0.93597513437271118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="botonBorrar" destination="YFX-Wh-o65" id="Cgv-jK-Cxf"/>
+                                    </connections>
+                                </button>
+                                <button width="65" alignment="center" title="Elegir" id="NA3-ld-aE2">
+                                    <color key="titleColor" red="0.14014863967895508" green="0.85493707656860352" blue="0.93597513437271118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="botonElegir" destination="YFX-Wh-o65" id="mAE-HV-PD7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label height="38.5" alignment="center" verticalAlignment="center" text="BANDERA" textAlignment="center" numberOfLines="3" id="ZEr-kU-x3T">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="bandera4" destination="ZEr-kU-x3T" id="xmf-RL-CJd"/>
+                        <outlet property="resultadoIngredientes" destination="iCd-nq-3G7" id="dc6-2x-yLV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="256" y="2514"/>
+        </scene>
+        <!--IdentificadorValorVerificar-->
+        <scene sceneID="Z1a-13-lcs">
+            <objects>
+                <controller identifier="IdentificadorValorVerificar" id="6AC-Pl-11F" customClass="Verificar" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="VERIFICAR" textAlignment="center" id="V3J-9q-lbV">
+                            <color key="textColor" red="1" green="0.55363555929999997" blue="0.55961208750000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="1" alignment="center" text="Tu pizza de tu elección es:" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="3" id="s4d-Fi-dZY"/>
+                        <separator alignment="left" id="1kQ-Ca-PL2"/>
+                        <separator alignment="left" id="0j5-jI-kMU"/>
+                        <label alignment="center" text="Label" textAlignment="center" numberOfLines="8" id="bsC-J5-399">
+                            <color key="textColor" red="1" green="0.55363555929999997" blue="0.55961208750000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <separator alignment="left" id="GqT-GR-fMR"/>
+                        <button width="1" alignment="left" title="CONFIRMAR" id="1Ee-MV-i1v">
+                            <color key="titleColor" red="1" green="0.55363555929999997" blue="0.55961208750000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="botonElegir" destination="6AC-Pl-11F" id="OaE-B1-JWi"/>
+                            </connections>
+                        </button>
+                        <label height="38.5" alignment="center" verticalAlignment="center" text="BANDERA" textAlignment="center" numberOfLines="2" id="FaX-oK-rBU">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="bandera5" destination="bsC-J5-399" id="8AG-LJ-jos"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="256" y="3025.5"/>
+        </scene>
+        <!--IdentificadorValorPedido-->
+        <scene sceneID="Rby-n9-aKC">
+            <objects>
+                <controller identifier="IdentificadorValorPedido" id="HVx-QA-8wp" customClass="Pedido" customModule="PedirPizzaAppleWatch_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="Yzr-1J-dmR"/>
+                        <separator alignment="left" id="Xxt-DC-Z7z"/>
+                        <label alignment="center" text="-" textAlignment="center" numberOfLines="3" id="XtI-WG-OXC">
+                            <color key="textColor" red="0.91470438241958618" green="0.05781061202287674" blue="0.96928054094314575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <separator alignment="left" id="iwe-oX-Rbc"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="INICIO" id="kHY-9q-xgU">
+                            <connections>
+                                <segue destination="HLO-0q-rwB" kind="push" id="Kb8-Ze-t7M"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="qPp-xI-zyU"/>
+                    </items>
+                    <connections>
+                        <outlet property="resultadoFinal" destination="XtI-WG-OXC" id="1Zn-aO-oN7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-128" y="747"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Kb8-Ze-t7M"/>
+    </inferredMetricsTieBreakers>
 </document>
