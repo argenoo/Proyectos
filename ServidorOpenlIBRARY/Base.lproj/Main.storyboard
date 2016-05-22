@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ServidorOpenlIBRARY" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capturar ISBN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0N-2k-WoL">
+                                <rect key="frame" x="232" y="67" width="137" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="XhT-m3-i5d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kf-77-kMB">
+                                <rect key="frame" x="414" y="101" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="JQR-ZE-N9A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="Busqueda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzE-M5-OD3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17K-vd-C3a">
+                                <rect key="frame" x="264" y="146" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="X4f-V3-kXA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Limpiar"/>
+                                <connections>
+                                    <action selector="Limpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1i8-2j-dcP"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="                                     VISTA" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aA4-ox-re0">
+                                <rect key="frame" x="52" y="210" width="528" height="342"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="webSearch" keyboardAppearance="alert" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8A-Cd-Uup">
+                                <rect key="frame" x="161" y="101" width="218" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="x5q-hZ-3ap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aA4-ox-re0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="88p-Fm-7mv"/>
+                            <constraint firstItem="17K-vd-C3a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BFr-02-rXr"/>
+                            <constraint firstItem="G0N-2k-WoL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eiw-dO-kTR"/>
+                            <constraint firstItem="y8A-Cd-Uup" firstAttribute="top" secondItem="0kf-77-kMB" secondAttribute="top" id="FAK-Rf-OD2"/>
+                            <constraint firstItem="y8A-Cd-Uup" firstAttribute="top" secondItem="G0N-2k-WoL" secondAttribute="bottom" constant="13" id="IAc-1L-lzL"/>
+                            <constraint firstItem="aA4-ox-re0" firstAttribute="top" secondItem="17K-vd-C3a" secondAttribute="bottom" constant="34" id="La7-hC-VzZ"/>
+                            <constraint firstItem="0kf-77-kMB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="142.5" id="RXU-24-0pY"/>
+                            <constraint firstItem="aA4-ox-re0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="16" id="U8O-vT-btz"/>
+                            <constraint firstItem="0kf-77-kMB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="Vmb-2y-7AA"/>
+                            <constraint firstItem="y8A-Cd-Uup" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-30" id="Zy5-GT-tAn"/>
+                            <constraint firstItem="aA4-ox-re0" firstAttribute="top" secondItem="0kf-77-kMB" secondAttribute="bottom" constant="79" id="cYb-z8-3fH"/>
+                            <constraint firstItem="17K-vd-C3a" firstAttribute="top" secondItem="y8A-Cd-Uup" secondAttribute="bottom" constant="15" id="dcD-Bd-W1h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aA4-ox-re0" secondAttribute="bottom" constant="48" id="dsH-ea-uXj"/>
+                            <constraint firstItem="y8A-Cd-Uup" firstAttribute="bottom" secondItem="0kf-77-kMB" secondAttribute="bottom" id="oaO-LL-pTe"/>
+                            <constraint firstItem="0kf-77-kMB" firstAttribute="leading" secondItem="y8A-Cd-Uup" secondAttribute="trailing" constant="35" id="s9G-bC-Z2Q"/>
+                            <constraint firstItem="G0N-2k-WoL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="vnw-sG-t7Z"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CajaISBN" destination="y8A-Cd-Uup" id="7GL-iH-Lve"/>
+                        <outlet property="CajaResultado" destination="aA4-ox-re0" id="836-aL-x2I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="185" y="235"/>
         </scene>
     </scenes>
 </document>
