@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" constant="137" id="XhT-m3-i5d"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kf-77-kMB">
@@ -33,7 +33,9 @@
                                     <constraint firstAttribute="width" constant="57" id="JQR-ZE-N9A"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Enter"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="Busqueda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzE-M5-OD3"/>
                                 </connections>
@@ -44,14 +46,17 @@
                                     <constraint firstAttribute="width" constant="72" id="X4f-V3-kXA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Limpiar"/>
+                                <state key="normal" title="Limpiar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="Limpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1i8-2j-dcP"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="                                     VISTA" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aA4-ox-re0">
                                 <rect key="frame" x="52" y="210" width="528" height="342"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.54000288249999995" blue="0.059345364570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="webSearch" keyboardAppearance="alert" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                             </textView>
@@ -61,10 +66,13 @@
                                     <constraint firstAttribute="height" constant="30" id="x5q-hZ-3ap"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="search"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="9z6-e0-EXx"/>
+                                </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.54000288249999995" blue="0.059345364570000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="aA4-ox-re0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="88p-Fm-7mv"/>
                             <constraint firstItem="17K-vd-C3a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BFr-02-rXr"/>
@@ -83,6 +91,9 @@
                             <constraint firstItem="0kf-77-kMB" firstAttribute="leading" secondItem="y8A-Cd-Uup" secondAttribute="trailing" constant="35" id="s9G-bC-Z2Q"/>
                             <constraint firstItem="G0N-2k-WoL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="vnw-sG-t7Z"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="BYZ-38-t0r" eventType="touchDown" id="V3g-TE-jfR"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="CajaISBN" destination="y8A-Cd-Uup" id="7GL-iH-Lve"/>

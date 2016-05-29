@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F4948C7B1CF1FC6900FE2915 /* ServidorOpenlIBRARY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServidorOpenlIBRARY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4948C7B1CF1FC6900FE2915 /* ServidorOpenlIBRARY2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServidorOpenlIBRARY2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4948C7E1CF1FC6900FE2915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4948C801CF1FC6900FE2915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4948C831CF1FC6900FE2915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		F4948C7C1CF1FC6900FE2915 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4948C7B1CF1FC6900FE2915 /* ServidorOpenlIBRARY.app */,
+				F4948C7B1CF1FC6900FE2915 /* ServidorOpenlIBRARY2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F4948C7A1CF1FC6900FE2915 /* ServidorOpenlIBRARY */ = {
+		F4948C7A1CF1FC6900FE2915 /* ServidorOpenlIBRARY2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4948C8D1CF1FC6900FE2915 /* Build configuration list for PBXNativeTarget "ServidorOpenlIBRARY" */;
+			buildConfigurationList = F4948C8D1CF1FC6900FE2915 /* Build configuration list for PBXNativeTarget "ServidorOpenlIBRARY2" */;
 			buildPhases = (
 				F4948C771CF1FC6900FE2915 /* Sources */,
 				F4948C781CF1FC6900FE2915 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = ServidorOpenlIBRARY;
+			name = ServidorOpenlIBRARY2;
 			productName = ServidorOpenlIBRARY;
-			productReference = F4948C7B1CF1FC6900FE2915 /* ServidorOpenlIBRARY.app */;
+			productReference = F4948C7B1CF1FC6900FE2915 /* ServidorOpenlIBRARY2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F4948C761CF1FC6900FE2915 /* Build configuration list for PBXProject "ServidorOpenlIBRARY" */;
+			buildConfigurationList = F4948C761CF1FC6900FE2915 /* Build configuration list for PBXProject "ServidorOpenlIBRARY2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4948C7A1CF1FC6900FE2915 /* ServidorOpenlIBRARY */,
+				F4948C7A1CF1FC6900FE2915 /* ServidorOpenlIBRARY2 */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +256,7 @@
 				INFOPLIST_FILE = ServidorOpenlIBRARY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.argenis.ServidorOpenlIBRARY;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ServidorOpenlIBRARY2;
 			};
 			name = Debug;
 		};
@@ -268,14 +268,14 @@
 				INFOPLIST_FILE = ServidorOpenlIBRARY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.argenis.ServidorOpenlIBRARY;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ServidorOpenlIBRARY2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F4948C761CF1FC6900FE2915 /* Build configuration list for PBXProject "ServidorOpenlIBRARY" */ = {
+		F4948C761CF1FC6900FE2915 /* Build configuration list for PBXProject "ServidorOpenlIBRARY2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4948C8B1CF1FC6900FE2915 /* Debug */,
@@ -284,13 +284,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4948C8D1CF1FC6900FE2915 /* Build configuration list for PBXNativeTarget "ServidorOpenlIBRARY" */ = {
+		F4948C8D1CF1FC6900FE2915 /* Build configuration list for PBXNativeTarget "ServidorOpenlIBRARY2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4948C8E1CF1FC6900FE2915 /* Debug */,
 				F4948C8F1CF1FC6900FE2915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ServidorOpenlIBRARY.xcodeproj">
+      location = "self:/Users/Argeno/Desktop/ServidorOpenlIBRARY/ServidorOpenlIBRARY2.xcodeproj">
    </FileRef>
 </Workspace>

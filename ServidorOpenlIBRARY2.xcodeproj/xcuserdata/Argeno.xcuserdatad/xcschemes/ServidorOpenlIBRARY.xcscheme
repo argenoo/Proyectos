@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4948C7A1CF1FC6900FE2915"
-               BuildableName = "ServidorOpenlIBRARY.app"
-               BlueprintName = "ServidorOpenlIBRARY"
-               ReferencedContainer = "container:ServidorOpenlIBRARY.xcodeproj">
+               BuildableName = "ServidorOpenlIBRARY2.app"
+               BlueprintName = "ServidorOpenlIBRARY2"
+               ReferencedContainer = "container:ServidorOpenlIBRARY2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4948C7A1CF1FC6900FE2915"
-            BuildableName = "ServidorOpenlIBRARY.app"
-            BlueprintName = "ServidorOpenlIBRARY"
-            ReferencedContainer = "container:ServidorOpenlIBRARY.xcodeproj">
+            BuildableName = "ServidorOpenlIBRARY2.app"
+            BlueprintName = "ServidorOpenlIBRARY2"
+            ReferencedContainer = "container:ServidorOpenlIBRARY2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4948C7A1CF1FC6900FE2915"
-            BuildableName = "ServidorOpenlIBRARY.app"
-            BlueprintName = "ServidorOpenlIBRARY"
-            ReferencedContainer = "container:ServidorOpenlIBRARY.xcodeproj">
+            BuildableName = "ServidorOpenlIBRARY2.app"
+            BlueprintName = "ServidorOpenlIBRARY2"
+            ReferencedContainer = "container:ServidorOpenlIBRARY2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4948C7A1CF1FC6900FE2915"
-            BuildableName = "ServidorOpenlIBRARY.app"
-            BlueprintName = "ServidorOpenlIBRARY"
-            ReferencedContainer = "container:ServidorOpenlIBRARY.xcodeproj">
+            BuildableName = "ServidorOpenlIBRARY2.app"
+            BlueprintName = "ServidorOpenlIBRARY2"
+            ReferencedContainer = "container:ServidorOpenlIBRARY2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
